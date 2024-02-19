@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  vnc-desktop:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5901:5901"
+    environment:
+      VNC_RESOLUTION: "1280x720"
+      VNC_PW: "emsignohp2103"
